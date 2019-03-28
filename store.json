@@ -1,0 +1,49 @@
+{
+  "products": {
+    "1": {
+      "id": 1,
+      "name": "bag",
+      "description": "black bag",
+      "price": 150,
+      "discount": 50,
+      "isOnSale": true,
+      "categogry": "accessories"
+    },
+    "2": {
+      "id": 2,
+      "name": "shirt",
+      "description": "black shirt",
+      "price": 300,
+      "discount": 50,
+      "isOnSale": true,
+      "categogry": "clothes"
+    },
+    "3": {
+      "id": 3,
+      "name": "shoes",
+      "description": "white shoes",
+      "price": 300,
+      "discount": 50,
+      "isOnSale": true,
+      "categogry": "shoses"
+    },
+    "4": {
+      "name": "shoes",
+      "description": "white shoes",
+      "id": 4,
+      "categogry": "accessories"
+    }
+  },
+  "categories": {
+    "1": {
+      "id": 1,
+      "name": "clothes",
+      "description": "collection of clothes"
+    },
+    "2": {
+      "name": "accessories",
+      "description": "collection of clothes",
+      "id": 2
+    }
+  }
+}
