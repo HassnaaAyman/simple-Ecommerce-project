@@ -3,6 +3,7 @@ var router = express.Router();
 const Products = require('../models/products');
 
 
+
 /* GET all products page. */
 router.get('/', function (req, res, next) {
   let products = Products.getAll();

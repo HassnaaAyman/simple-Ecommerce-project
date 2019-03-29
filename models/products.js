@@ -9,6 +9,9 @@ module.exports = {
     getById(id) {
         return db.get(`products.${id}`)
     },
+    getCategoriesById(categoryId) {
+        return (this.getAll().filter(p => p.categoryId === categoryId));
+    },
     add(product) {
         const products = db.get('products');
         let sortedIds = Object.keys(products).sort().reverse();

@@ -1,12 +1,17 @@
 var express = require('express');
 var router = express.Router();
 const Categories = require('../models/categories');
+const Products = require('../models/products')
 
 
 /* GetAll categories */
 router.get("/", function (req, res, next) {
     let categories = Categories.getAll();
     res.send(categories);
+});
+
+router.get('/:categoryId/products', function (req, res, next) {
+    res.send(Products.getCategoriesById(req.params.categoryId));
 });
 
 /* GetById categories */
